@@ -136,9 +136,9 @@
       for (let i = 1; i <= 20; i++) {
         const status = [1, 5, 8, 9, 10].includes(i);
         html += `
-          <div class="col-3 p-0">
+          <div class="col-3 col-md-3 col-lg-2 p-0">
             <input style="display: none;" type="radio" name="kursi" id="kursi${i}" value="${i}" ${status ? 'disabled' : ''}>
-            <label class="shadow-sm bg-${status ? 'primary' : 'light'} p-2 m-2 text-${status ? 'white' : 'dark'} h3 text-uppercase border" style="border-radius: 30px;"
+            <label class="shadow-sm bg-${status ? 'primary' : 'light'} p-2 m-2 text-${status ? 'white' : 'dark'} h5 text-uppercase border" style="border-radius: 25px;"
               for="kursi${i}">
               <div class="d-flex align-items-center " style="min-height:50px; min-width:50px">
                 <span style="width: 100%;">
