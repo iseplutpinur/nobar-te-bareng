@@ -35,6 +35,41 @@
   <link rel="stylesheet" href="style.css">
   <!-- Web App Manifest -->
   <link rel="manifest" href="manifest.json">
+  <style>
+    .custom-list {
+      list-style: none;
+      padding-left: 0;
+      margin-top: 0;
+      margin-left: 0;
+    }
+
+    .custom-list li {
+      position: relative;
+      padding-left: 40px;
+      margin-top: 12px;
+    }
+
+    .custom-list li:before {
+      content: '';
+      width: 30px;
+      height: 30px;
+      position: absolute;
+      background-image: url('./img/custom/trophy.png');
+      background-size: cover;
+      background-position: center;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+    .custom-list li span {
+      color: white;
+      position: absolute;
+      left: 9px;
+      font-size: .5rem;
+      font-weight: bold;
+    }
+  </style>
 </head>
 
 <body class="bg-white">
@@ -83,98 +118,45 @@
   </div>
 
 
-  <div class="page-content-wrapper mt-4">
-    <!-- konten disini -->
-    <div class="container bg-white">
-      <form action="">
-        <!-- Single Blog Card -->
-        <div class="px-3 mb-1">
-          <div class="d-flex align-items-start">
-            <span class="h5 fw-bold text-dark me-3">Kursi VIP</span>
-            <div class="me-3">
-              <span class="bg-primary me-1 rounded" style="padding:0 11px 0 11px;"></span>
-              <span>Terisi</span>
-            </div>
-            <div class="me-3">
-              <span class="bg-light me-1 rounded" style="padding:0 11px 0 11px;"></span>
-              <span>Kosong</span>
-            </div>
-          </div>
-        </div>
-        <div class="row p-2 px-3 text-center" id="input">
+  <div class="page-content-wrapper mt-4 mb-3">
+    <div class="container">
+      <h2 class="h6 mt-2 text-uppercase">pemenang kursi berhadiah</h2>
+      <ul class="custom-list">
+        <li><span>#1</span> Gusdul</li>
+        <li><span>#2</span> Dede</li>
+        <li><span>#3</span> Febri</li>
+      </ul>
 
-        </div>
-        <div class="d-grid gap-2 px-3 mt-2">
-          <button class="btn btn-primary" type="submit" style="border-radius: 30px;">Checkout</button>
-        </div>
-      </form>
+      <h2 class="h6 mt-4 text-uppercase">pemenang tebak men of the match</h2>
+      <ul class="custom-list">
+        <li><span>#1</span> Gusdul</li>
+        <li><span>#2</span> Dede</li>
+        <li><span>#3</span> Febri</li>
+      </ul>
+
+      <h2 class="h6 mt-4 text-uppercase">pemenang tebak skor</h2>
+      <ul class="custom-list">
+        <li><span>#1</span> Gusdul</li>
+        <li><span>#2</span> Dede</li>
+        <li><span>#3</span> Febri</li>
+      </ul>
     </div>
-    <!-- jquery -->
-    <script src="js/jquery-3.6.0.min.js"></script>
-    <!-- All JavaScript Files -->
-    <script src="js/bootstrap.bundle.min.js"></script>
-    <script src="js/slideToggle.min.js"></script>
-    <script src="js/internet-status.js"></script>
-    <script src="js/tiny-slider.js"></script>
-    <script src="js/baguetteBox.min.js"></script>
-    <script src="js/rangeslider.min.js"></script>
-    <script src="js/vanilla-dataTables.min.js"></script>
-    <script src="js/index.js"></script>
-    <script src="js/magic-grid.min.js"></script>
-    <script src="js/dark-rtl.js"></script>
-    <script src="js/active.js"></script>
-    <!-- PWA -->
-    <script src="js/pwa.js"></script>
-
-
-    <script>
-      // data example
-      const datas = [{
-        'id': '1',
-        'name': 'a1',
-        'available': false,
-      }];
-
-      let html = '';
-      for (let i = 1; i <= 20; i++) {
-        const status = [1, 5, 8, 9, 10].includes(i);
-        html += `
-          <div class="col-3 col-md-3 col-lg-2 p-0">
-            <input style="display: none;" type="radio" name="kursi" id="kursi${i}" value="${i}" ${status ? 'disabled' : ''}>
-            <label class="shadow-sm bg-${status ? 'primary' : 'light'} p-2 m-2 text-${status ? 'white' : 'dark'} h5 text-uppercase border" style="border-radius: 25px;"
-              for="kursi${i}">
-              <div class="d-flex align-items-center " style="min-height:50px; min-width:50px">
-                <span style="width: 100%;">
-                  a${i}
-                </span>
-              </div>
-            </label>
-          </div>
-        `;
-      }
-      document.getElementById('input').innerHTML = html;
-      $(document).ready(function () {
-        $('input[name=kursi]').change(function () {
-          switch_select(this.value);
-        })
-
-        function switch_select(target) {
-          $('input[name=kursi]').each(function () {
-            if (!this.disabled) {
-              const ele = $(this);
-              const label = $(`label[for=${this.id}]`);
-              if (ele.val() == target) {
-                label.addClass('border-primary')
-                label.removeClass('bg-light')
-              } else {
-                label.addClass('bg-light')
-                label.removeClass('border-primary')
-              }
-            }
-          })
-        }
-      })
-    </script>
+  </div>
+  <!-- All JavaScript Files -->
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/slideToggle.min.js"></script>
+  <script src="js/internet-status.js"></script>
+  <script src="js/tiny-slider.js"></script>
+  <script src="js/baguetteBox.min.js"></script>
+  <script src="js/countdown.js"></script>
+  <script src="js/rangeslider.min.js"></script>
+  <script src="js/vanilla-dataTables.min.js"></script>
+  <script src="js/index.js"></script>
+  <script src="js/magic-grid.min.js"></script>
+  <script src="js/dark-rtl.js"></script>
+  <script src="js/active.js"></script>
+  <!-- PWA -->
+  <script src="js/pwa.js"></script>
 </body>
 
 </html>
