@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="NOBAR TE BARENG">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="theme-color" content="#0134d4">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <!-- Title -->
+  <title>NOBAR TE BARENG</title>
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+    rel="stylesheet">
+  <!-- Favicon -->
+  <link rel="icon" href="img/core-img/favicon.ico">
+  <link rel="apple-touch-icon" href="img/icons/icon-96x96.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="img/icons/icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="167x167" href="img/icons/icon-167x167.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="img/icons/icon-180x180.png">
+  <!-- CSS Libraries -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/bootstrap-icons.css">
+  <link rel="stylesheet" href="css/tiny-slider.css">
+  <link rel="stylesheet" href="css/baguetteBox.min.css">
+  <link rel="stylesheet" href="css/rangeslider.css">
+  <link rel="stylesheet" href="css/vanilla-dataTables.min.css">
+  <link rel="stylesheet" href="css/apexcharts.css">
+  <!-- Core Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+  <!-- Web App Manifest -->
+  <link rel="manifest" href="manifest.json">
+</head>
+
+<body class="bg-white">
+  <!-- Preloader -->
+  <div id="preloader">
+    <div class="spinner-grow text-primary" role="status"><span class="visually-hidden">Loading...</span></div>
+  </div>
+  <!-- Internet Connection Status -->
+  <!-- # This code for showing internet connection status -->
+  <div class="internet-connection-status" id="internetStatus"></div>
+  <div class="container p-0">
+    <div class="card"
+      style="background-image: url('./img/custom/login/bg.png'); height: 270px; opacity: .5; border-radius: 0; background-size: cover;">
+    </div>
+  </div>
+  <div style="position: absolute; width: 100%; z-index: 99; top: 0; left: 0;">
+    <div class="container p-3">
+      <div class="d-flex justify-content-between align-items-center">
+        <a href="./page-home.html">
+          <img src="./img/custom/login/logo.png" alt="" style="max-width: 150px;">
+        </a>
+        <span class="text-dark fw-bold">Halo Isep Lutpi</span>
+      </div>
+      <div class="text-center text-dark fw-bold mt-4">Pilih Men of the match</div>
+      <div class="d-flex justify-content-between align-items-center" style="height: 130px;">
+        <div class="d-flex justify-content-between align-items-end" style="height: 130px;">
+          <div class="d-flex flex-column align-items-center">
+            <img src="./img/custom/logo_club/bhayangkarafc.png" alt="" style="max-width: 100px;">
+            <span class="text-dark fw-bold small">Bhayangkara FC</span>
+          </div>
+        </div>
+
+        <span class="text-dark">VS</span>
+
+        <div class="d-flex justify-content-between align-items-end" style="height: 130px;">
+          <div class="d-flex flex-column align-items-center">
+            <img src="./img/custom/logo_club/persib.png" alt="" style="max-width: 80px;">
+            <span class="text-dark fw-bold small">Persib Bandung</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="page-content-wrapper mt-4">
+    <!-- konten disini -->
+    <div class="container">
+      <div class="card user-info-card">
+        <div class="card-body p-0">
+          <div class="d-flex align-items-center mb-4">
+            <div class="user-profile me-3" style="overflow: hidden;">
+              <img style="margin: auto; min-width: 85px;" src="./img/custom/men.png" alt="Mentor"></i>
+            </div>
+            <div class="user-info d-flex flex-column align-items-start">
+              <h3 class="mb-1 text-primary">Muhammad Natshir</h3>
+              <button class="btn btn-primary btn-sm" style="border-radius: 30px;">Pilih Pemain</button>
+              <small class="mt-1">Gambarnya burem</small>
+            </div>
+          </div>
+
+          <div class="d-flex align-items-center mb-4">
+            <div class="user-profile me-3" style="overflow: hidden;">
+              <img style="margin: auto; min-width: 85px;" src="./img/custom/men.png" alt="Mentor"></i>
+            </div>
+            <div class="user-info d-flex flex-column align-items-start">
+              <h3 class="mb-1 text-primary"> Nick Kuipers</h3>
+              <button class="btn btn-primary btn-sm" style="border-radius: 30px;">Pilih Pemain</button>
+              <small class="mt-1">Gambarnya burem</small>
+            </div>
+          </div>
+
+          <div class="d-flex align-items-center mb-4">
+            <div class="user-profile me-3" style="overflow: hidden;">
+              <img style="margin: auto; min-width: 85px;" src="./img/custom/men.png" alt="Mentor"></i>
+            </div>
+            <div class="user-info d-flex flex-column align-items-start">
+              <h3 class="mb-1 text-primary">Ardi Idrus</h3>
+              <button class="btn btn-primary btn-sm" style="border-radius: 30px;">Pilih Pemain</button>
+              <small class="mt-1">Gambarnya burem</small>
+            </div>
+          </div>
+
+          <div class="d-flex align-items-center mb-4">
+            <div class="user-profile me-3" style="overflow: hidden;">
+              <img style="margin: auto; min-width: 85px;" src="./img/custom/men.png" alt="Mentor"></i>
+            </div>
+            <div class="user-info d-flex flex-column align-items-start">
+              <h3 class="mb-1 text-primary">Bayu Fiqri</h3>
+              <button class="btn btn-primary btn-sm" style="border-radius: 30px;">Pilih Pemain</button>
+              <small class="mt-1">Gambarnya burem</small>
+            </div>
+          </div>
+
+          <div class="d-flex align-items-center mb-4">
+            <div class="user-profile me-3" style="overflow: hidden;">
+              <img style="margin: auto; min-width: 85px;" src="./img/custom/men.png" alt="Mentor"></i>
+            </div>
+            <div class="user-info d-flex flex-column align-items-start">
+              <h3 class="mb-1 text-primary">Indra Mustafa</h3>
+              <button class="btn btn-primary btn-sm" style="border-radius: 30px;">Pilih Pemain</button>
+              <small class="mt-1">Gambarnya burem</small>
+            </div>
+          </div>
+
+          <div class="d-flex align-items-center mb-4">
+            <div class="user-profile me-3" style="overflow: hidden;">
+              <img style="margin: auto; min-width: 85px;" src="./img/custom/men.png" alt="Mentor"></i>
+            </div>
+            <div class="user-info d-flex flex-column align-items-start">
+              <h3 class="mb-1 text-primary">Beckham Putra</h3>
+              <button class="btn btn-primary btn-sm" style="border-radius: 30px;">Pilih Pemain</button>
+              <small class="mt-1">Gambarnya burem</small>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- All JavaScript Files -->
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/slideToggle.min.js"></script>
+  <script src="js/internet-status.js"></script>
+  <script src="js/tiny-slider.js"></script>
+  <script src="js/baguetteBox.min.js"></script>
+  <script src="js/countdown.js"></script>
+  <script src="js/rangeslider.min.js"></script>
+  <script src="js/vanilla-dataTables.min.js"></script>
+  <script src="js/index.js"></script>
+  <script src="js/magic-grid.min.js"></script>
+  <script src="js/dark-rtl.js"></script>
+  <script src="js/active.js"></script>
+  <!-- PWA -->
+  <script src="js/pwa.js"></script>
+</body>
+
+</html>
